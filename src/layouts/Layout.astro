@@ -16,12 +16,37 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-purple-950">
 		<slot />
 	</body>
 </html>
 <style is:global>
-	:root {
+	@font-face {
+		font-family: 'Gyoza';
+		src: url('/fonts/gyozafont.otf') format('opentype');
+	}
+	.texto-3d {
+		font-weight: bold; /* Fuente en negrita */
+		line-height: 1; /* Espaciado de línea ajustado para un mejor efecto de sombra */
+		text-shadow: 
+			3px 3px 0px #000, /* Sombra más oscura para el efecto 3D */
+			6px 6px 0px rgba(0,0,0,0.5); /* Sombra más ligera para un efecto de profundidad */
+		-webkit-text-stroke: 3px black;
+	}
+	@keyframes respiracion {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+.letra-respiracion {
+  display: inline-block; /* Permite la transformación */
+  animation: respiracion 2s ease-in-out infinite;
+}
+	/* :root {
 		--accent: 136, 58, 234;
 		--accent-light: 224, 204, 250;
 		--accent-dark: 49, 10, 101;
@@ -47,5 +72,5 @@ const { title } = Astro.props;
 			Bitstream Vera Sans Mono,
 			Courier New,
 			monospace;
-	}
+	} */
 </style>
