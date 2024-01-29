@@ -3,19 +3,26 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
-import Galery from '../components/Galery.astro';
+import Galery from '../components/Basic-Gallery.astro';
 import Divider from '../components/Divider.astro';
 import Footer from '../components/Footer.astro';
+import BasicGallery from '../components/Basic-Gallery.astro';
+import KaidoGallery from '../components/Kaido-Gallery.astro';
 ---
 
 <Layout title="Uiliverse">
 	<main>
 		<Navbar />
 		<Hero />
-		<Galery 
-		title="Basics" 
-		description="Estos son los modelos de Hot Wheels más comunes y accesibles. Los diseños son variados, incluyendo tanto coches de fantasía como réplicas de vehículos reales. La construcción es sencilla, con un cuerpo de metal y un chasis de plástico, y no suelen tener partes móviles, como puertas o capós que se abran."
+		<BasicGallery 
+		title="Basic Racers" 
+		description="Los modelos de Hot Wheels más comunes y accesibles. Los diseños son variados, incluyendo tanto coches de fantasía como réplicas de vehículos reales. La construcción es sencilla, con un cuerpo de metal y un chasis de plástico, y no suelen tener partes móviles, como puertas o capós que se abran."
+		/>
+		<KaidoGallery
+		title="Kaido Racers"
+		description="Los Kaido Racers son coches modificados para correr en las autopistas japonesas. Se caracterizan por tener un aspecto agresivo, con grandes alerones, llantas anchas y bajos muy cercanos al suelo. Los modelos de Hot Wheels basados en este estilo suelen tener un aspecto muy similar, con carrocerías anchas y bajos muy cercanos al suelo."
 		/>
 		<Footer/>
+		
 	</main>
 </Layout>
