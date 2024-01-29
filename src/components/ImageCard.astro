@@ -3,9 +3,10 @@ interface Props {
 	alt : string;
   src : string;
   price : string;
+  name : string;
 }
 
-const { alt, src, price } = Astro.props;
+const { alt, src, price, name } = Astro.props;
 ---
 
   <img
@@ -15,5 +16,9 @@ const { alt, src, price } = Astro.props;
   />
   <span class=" whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 absolute top-0 right-0">
     $ { price }
+  </span>
+
+  <span class=" whitespace-nowrap rounded-full bg-amber-100 px-2.5 py-0.5 text-sm text-amber-700 absolute bottom-0 left-0">
+    { name }
   </span>
 
