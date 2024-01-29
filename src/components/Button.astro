@@ -1,0 +1,15 @@
+---
+interface Props {
+	text: string;
+	href: string;
+}
+
+const { text, href } = Astro.props;
+---
+
+<button class="inline-flex items-center rounded-lg border-2 px-3 py-1 lg:mt-0 md:mt-0 sm:mt-5 xs:mt-5 xxs:mt-5 border-yellow-400 font-semibold bg-gray-900 text-white hover:bg-gray-900 hover:border-purple-700 hover:text-gray-200-400">
+    <a href={href} target="_blank">
+        {text}
+    </a>
+    <img src="/assets/images/icons8-whatsapp.svg" alt="whatsapp icon" class="w-4 h-4 ml-1">
+</button>

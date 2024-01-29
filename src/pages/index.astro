@@ -5,13 +5,17 @@ import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import Galery from '../components/Galery.astro';
 import Divider from '../components/Divider.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Uiliverse">
 	<main>
 		<Navbar />
 		<Hero />
-		<Divider/>
-		<Galery />
+		<Galery 
+		title="Basics" 
+		description="Estos son los modelos de Hot Wheels más comunes y accesibles. Los diseños son variados, incluyendo tanto coches de fantasía como réplicas de vehículos reales. La construcción es sencilla, con un cuerpo de metal y un chasis de plástico, y no suelen tener partes móviles, como puertas o capós que se abran."
+		/>
+		<Footer/>
 	</main>
 </Layout>
