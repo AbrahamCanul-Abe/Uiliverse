@@ -9,10 +9,23 @@ import Button from "./Button.astro"
         <img src="/assets/images/uiliicon.svg" alt="uiliverse-icon" class="w-14 h-14 text-white p-2  rounded-full">
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center text-white font-semibold">
-        <a class="mr-5 hover:text-purple-700 cursor-pointer">Básicos</a>
-        <a class="mr-5 hover:text-purple-700 cursor-pointer">Premium</a>
-        <a class="mr-5 hover:text-purple-700 cursor-pointer">RLC</a>
+        <a class="mr-5 hover:text-purple-700 cursor-pointer" href="#basicos">Básicos</a>
+        <a class="mr-5 hover:text-purple-700 cursor-pointer" href="#kaidos">Kaidos</a>
+        <a class="mr-5 hover:text-purple-700 cursor-pointer" href="#premium">Premium</a>
+        <a class="mr-5 hover:text-purple-700 cursor-pointer" href="#rlc">RLC</a>
       </nav>
       <Button text="Comprar" href="https://api.whatsapp.com/send?phone=%2B529861083308&data=ARDGNv-W8QdFZnh7wzPG7c2ca--c2vecZynm-W_VF9BRl8sPRQcS-6R4RCsa4xX2FGrvAGgqAPYvxUJBn7Y0ebBzT66Db2SmDWUEnLGOhD_YamQcgxfBAzmlqfXSlrxs2x0tWrjJab9-Uh0Db0h4HUdbKA&source=FB_Page&app=facebook&entry_point=page_cta"/>
     </div>
   </header>
+
+  <script>
+    document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault(); // Previene el comportamiento por defecto de saltar directamente a la sección.
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth' // Esto hace que el desplazamiento hacia la sección sea suave.
+    });
+  });
+});
+
+  </script>

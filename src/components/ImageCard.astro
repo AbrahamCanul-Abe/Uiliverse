@@ -12,13 +12,13 @@ const { alt, src, price, name } = Astro.props;
   <img
     alt={ alt }
     src={ src }
-    class="h-full w-full object-cover rounded-br-3xl rounded-tl-3xl"
+    class="h-full w-full object-cover rounded-br-3xl rounded-tl-3xl cursor-pointer"
   />
-  <span class=" whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700 absolute top-0 right-0">
+  <span class=" whitespace-nowrap rounded-full bg-green-100 px-2.5 py-0.5 text-sm text-green-700 absolute top-0 right-0">
     $ { price }
   </span>
 
-  <span class=" whitespace-nowrap rounded-full bg-amber-100 px-2.5 py-0.5 text-sm text-amber-700 absolute bottom-0 left-0">
+  <span class=" whitespace-nowrap rounded-full bg-red-100 px-2.5 py-0.5 text-sm text-red-700 absolute bottom-0 left-0">
     { name }
   </span>
 

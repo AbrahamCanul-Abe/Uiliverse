@@ -8,30 +8,30 @@ interface props {
 
 const { title, description } = Astro.props;
 ---
-<section class="text-gray-400 body-font mt-20">
+<section class="text-gray-400 body-font mt-20" id="basicos">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
-      <h1 class="lg:text-7xl md:text-7xl sm:text-7xl xs:text-6xl xxs:text-5xl font-Gyoza  text-purple-700 ">{title}</h1>
+      <h1 class="lg:text-7xl md:text-7xl sm:text-7xl xs:text-6xl xxs:text-5xl font-Gyoza  text-purple-700 mb-6">{title}</h1>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base my-2">{description}</p>
     </div>
     <div class="flex flex-wrap -m-4">
-      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/Basico-1.webp', event)">
-        <ImageCard src="/assets/images/Basico-1.webp" alt="Basico-1" price="400" name="basic"/>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/basico1.webp', event)">
+        <ImageCard src="/assets/images/basico1.webp" alt="Nissan S14" price="90" name="Nissan S14"/>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/Basico-1.webp', event)">
-        <ImageCard src="/assets/images/Basico-1.webp" alt="Basico-1" price="400" name="basic"/>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/basico2.webp', event)">
+        <ImageCard src="/assets/images/basico2.webp" alt="Toyota Supra" price="150" name="Toyota Supra"/>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/Basico-1.webp', event)">
-        <ImageCard src="/assets/images/Basico-1.webp" alt="Basico-1" price="400" name="basic"/>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/basico3.webp', event)">
+        <ImageCard src="/assets/images/basico3.webp" alt="Nissan S14" price="90" name="Nissan S14"/>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/Basico-1.webp', event)">
-        <ImageCard src="/assets/images/Basico-1.webp" alt="Basico-1" price="400" name="basic"/>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/basico4.webp', event)">
+        <ImageCard src="/assets/images/basico4.webp" alt="Toyota Supra" price="200" name="Toyota Supra"/>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/Basico-1.webp', event)">
-        <ImageCard src="/assets/images/Basico-1.webp" alt="Basico-1" price="400" name="basic"/>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/basico5.webp', event)">
+        <ImageCard src="/assets/images/basico5.webp" alt="Nissan GTR" price="80" name="Nissan GTR"/>
       </div>
-      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/Basico-1.webp', event)">
-        <ImageCard src="/assets/images/Basico-1.webp" alt="Basico-1" price="400" name="basic"/>
+      <div class="lg:w-1/3 sm:w-1/2 p-4 relative" onclick="openModal('/assets/images/basico6.webp', event)">
+        <ImageCard src="/assets/images/basico6.webp" alt="Nissan GTR - Fox" price="120" name="Nissan GTR - Fox"/>
       </div>
     </div>
   </div>
